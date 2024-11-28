@@ -3,9 +3,12 @@ package com.workz.key.configuration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 
 @Configuration
 @ComponentScan("com.workz.key")
+@PropertySource("classpath:app.properties")
+
 public class KeyConfiguration {
     public KeyConfiguration() {
         System.out.println("Created KeyConfiguration");
